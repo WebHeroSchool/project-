@@ -1,5 +1,5 @@
-﻿@font-face {
-	font-family: 'Conv_Montserrat';
+@font-face {
+	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat.eot');
 	src: local('☺'), url('../fonts/Montserrat.woff') format('woff'), url('../fonts/Montserrat.ttf') format('truetype'), url('../fonts/Montserrat.svg') format('svg');
 	font-weight: normal;
@@ -7,19 +7,37 @@
 }
 
 @font-face {
-	font-family: 'Conv_montserrat_bold';
+	font-family: 'Montserrat';
 	src: url('../fonts/montserrat_bold.eot');
 	src: local('☺'), url('../fonts/montserrat_bold.woff') format('woff'), url('../fonts/montserrat_bold.ttf') format('truetype'), url('../fonts/montserrat_bold.svg') format('svg');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
+
+body {
+	margin: 0;
+}
 .block__one {
-  font-family: 'Conv_Montserrat';
-  margin: 0 0 30px 0;
+	font-family: 'Montserrat';
+	font-weight: normal;
+	font-style: normal;
 }
 
 .title__main {
-  font-family: 'Conv_montserrat_bold';
-  margin: 0 0 30px 0;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-style: normal;
+  font-size: 80px;
+  line-height: 82px;
+  margin: 263px 0 0 789px;
+}
+
+.header  {
+	margin: 36px 0 0 52; /* Отступы вокруг элемента */
+	 padding: ;
+}
+
+.header span {
+	margin: 42px 0 0 388px;
 }
