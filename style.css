@@ -1,43 +1,395 @@
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat.eot');
-	src: local('☺'), url('../fonts/Montserrat.woff') format('woff'), url('../fonts/Montserrat.ttf') format('truetype'), url('../fonts/Montserrat.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/montserrat_bold.eot');
-	src: local('☺'), url('../fonts/montserrat_bold.woff') format('woff'), url('../fonts/montserrat_bold.ttf') format('truetype'), url('../fonts/montserrat_bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
 
 
 body {
 	margin: 0;
-}
-.block__one {
+	padding: 0;
 	font-family: 'Montserrat';
-	font-weight: normal;
-	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+/* start header */
+.header {
+	position: relative;
+	width: 1349px;
+	margin: 0 0 0 0;
+	height: 920px;
+}
+
+.header:before {
+	display: block;
+	content: '';
+	width: 461px;
+	height: 920px;
+	margin: 0;
+	background: #000;
+}
+
+.nav {
+	display: block;
+}
+
+.link {
+	position: absolute;
+width: 98px;
+height: 37px;
+left: 52px;
+top: 36px;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 0.07em;
+}
+
+.link__two {
+	position: absolute;
+	left: 388px;
+top: 42px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+}
+
+.icon__one {
+	position: absolute;
+	width: 11px;
+  height: 5.5px;
+  left: 423px;
+  top: 54px;
+}
+
+.icon__two {
+	position: absolute;
+width: 43px;
+height: 10px;
+left: 1220px;
+top: 657px;
+color: #000;
+}
+
+.icon__three {
+
+position: absolute;
+width: 27px;
+height: 46px;
+left: 710px;
+top: 815px;
+box-sizing: border-box;
+}
+
+.icon__three-add {
+	position: absolute;
+	width: 2.45px;
+  height: 8.21px;
+  left: 722.5px;
+  top: 826px;
+}
+
+.icon__FB {
+	position: absolute;
+width: 42.98px;
+height: 43px;
+left: 162.02px;
+top: 816px;
+border-radius: 50%;
+
+background: #FFFFFF;
+}
+
+.icon__VK {
+	position: absolute;
+width: 42.98px;
+height: 43px;
+left: 107.01px;
+top: 816px;
+	border-radius: 50%;
+}
+
+.icon__INST {
+	position: absolute;
+width: 42.98px;
+height: 43px;
+left: 52px;
+top: 816px;
+border-radius: 50%;
+}
+
+.picture {
+	position: absolute;
+width: 550px;
+height: 550px;
+left: 190px;
+top: 200px;
 }
 
 .title__main {
-	font-family: 'Montserrat';
-	font-weight: 700;
-	font-style: normal;
+	position: absolute;
+  left: 789px;
+  top: 263px;
+  font-style: normal;
+  font-weight: 700;
   font-size: 80px;
   line-height: 82px;
-  margin: 263px 0 0 789px;
+  color: #000
 }
 
-.header  {
-	margin: 36px 0 0 52; /* Отступы вокруг элемента */
-	 padding: ;
+.desc__one {
+	position: absolute;
+  left: 789px;
+  top: 470px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000
 }
 
-.header span {
-	margin: 42px 0 0 388px;
+.button__one {
+	position: absolute;
+  width: 203px;
+  height: 44px;
+  left: 790px;
+  top: 640px;
+	text-transform: uppercase;
+	border: 1.5px solid #000000;
+  box-sizing: border-box;
+	background: #fff;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 0px;
+}
+
+.add {
+position: absolute;
+width: 172px;
+height: 0px;
+left: 1043px;
+top: 662px;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 0px;
+}
+/* end header */
+
+/* start 2 section */
+
+.block__two {
+	width: 1349px;
+	margin: 0;
+	height: 900px;
+	background: #FAE8E4;
+}
+
+.block__two:before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 450px;
+  height: 556px;
+  left: 850px;
+  top: 1088px;
+  background: #FFFFFF;
+	box-shadow: 25px 25px 40px lightgray;
+}
+
+.title__two {
+	position: absolute;
+  width: 340px;
+  height: 41px;
+  left: 905px;
+  top: 1108px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+}
+
+.title__three {
+	position: absolute;
+left: 908px;
+top: 1166px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.07em;
+text-transform: uppercase;
+color: #000000;
+opacity: 0.5;
+}
+
+.desc__two {
+	position: absolute;
+  left: 908px;
+  top: 1238px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.button__two {
+	position: absolute;
+width: 230px;
+height: 44px;
+left: 1000px;
+top: 1536px;
+background: #fff;
+border: 1.5px solid #000000;
+text-transform: uppercase;
+}
+
+.button__two-two {
+	position: absolute;
+  width: 90px;
+  height: 44px;
+  left: 900px;
+  top: 1536px;
+	background: #fff;
+	border: 1.5px solid #000;
+  text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+.loco {
+	position: absolute;
+width: 299px;
+height: 58px;
+left: 850px;
+top: 1687px;
+text-transform: uppercase;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+}
+
+.icon__circle-one {
+	position: absolute;
+	width: 30px;
+  height: 30px;
+	left: 900px;
+  top: 1447px;
+  border-radius: 50%;
+}
+
+.icon__circle-two {
+	position: absolute;
+	width: 38px;
+  height: 38px;
+	left: 940px;
+  top: 1443px;
+}
+
+.icon__circle-three {
+	position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 988px;
+  top: 1447px;
+}
+
+.icon__circle-four {
+	position: absolute;
+  width: 30.18px;
+  height: 30px;
+  left: 1028px;
+  top: 1447px;
+}
+
+.icon__vektor {
+	position: absolute;
+  width: 241px;
+  height: 10px;
+  left: 1060px;
+  top: 1690px;
+}
+
+.icon__bag {
+	position: absolute;
+  width: 398px;
+  height: 415px;
+  left: 137px;
+  top: 1117px;
+}
+
+.icon__bag-two {
+	position: absolute;
+  width: 582px;
+  height: 844px;
+  left: 231px;
+  top: 928px;
+}
+
+.icon__price {
+	position: absolute;
+  width: 125px;
+  height: 57px;
+  left: 1110px;
+  top: 1433px;
+	font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+/* end section 2 */
+
+/* start section 3 */
+
+.block__three {
+	position: relative;
+	width: 1349px;
+	margin: 0;
+	height: 900px;
+	background: #EBE3D8;
+}
+
+.title-two {
+	position: absolute;
+	left: 800px;
+top: 263px;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 41px;
+}
+
+.title__four {
+	position: absolute;
+	left: 800px;
+	top: 320px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.desc {
+	position: absolute;
+left: 800px;
+top: 380px;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 21px;
+color: #000000;
+opacity: 0.5;
+}
+
+.button__three {
+
 }
