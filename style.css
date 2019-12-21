@@ -1,5 +1,3 @@
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -10,25 +8,57 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
+
 /* start header */
+
 .header {
 	position: relative;
 	width: 1349px;
-	margin: 0 0 0 0;
-	height: 920px;
+	margin: 0;
+	height: 92px;
 }
 
 .header:before {
-	display: block;
+	position: absolute;
+	display: inline-block;
 	content: '';
 	width: 461px;
-	height: 920px;
+	height: 92px;
 	margin: 0;
 	background: #000;
 }
 
 .nav {
-	display: block;
+	display: flex;
+	justify-content: flex-end;
+}
+
+ .menu {
+	position: relative;
+	display: flex;
+	width: 92px;
+	height: 92px;
+	background: whitesmoke;
+	justify-content: center;
+}
+
+.menu span {
+	position: absolute;
+	display: inline-block;
+	width: 35px;
+	height: 4px;
+  top: 39px;
+	background: #000;
+}
+
+.menu span:before {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	width: 35px;
+	height: 4px;
+	background: #000;
+	top: 10px;
 }
 
 .link {
@@ -55,6 +85,9 @@ font-size: 20px;
 line-height: 24px;
 }
 
+/* header end */
+
+/* start 1 section */
 .icon__one {
 	position: absolute;
 	width: 11px;
@@ -68,7 +101,7 @@ line-height: 24px;
 width: 43px;
 height: 10px;
 left: 1220px;
-top: 657px;
+top: 573px;
 color: #000;
 }
 
@@ -78,7 +111,7 @@ position: absolute;
 width: 27px;
 height: 46px;
 left: 710px;
-top: 815px;
+top: 720px;
 box-sizing: border-box;
 }
 
@@ -87,7 +120,7 @@ box-sizing: border-box;
 	width: 2.45px;
   height: 8.21px;
   left: 722.5px;
-  top: 826px;
+  top: 730px;
 }
 
 .icon__FB {
@@ -95,7 +128,7 @@ box-sizing: border-box;
 width: 42.98px;
 height: 43px;
 left: 162.02px;
-top: 816px;
+top: 720px;
 border-radius: 50%;
 
 background: #FFFFFF;
@@ -106,7 +139,7 @@ background: #FFFFFF;
 width: 42.98px;
 height: 43px;
 left: 107.01px;
-top: 816px;
+top: 720px;
 	border-radius: 50%;
 }
 
@@ -115,22 +148,37 @@ top: 816px;
 width: 42.98px;
 height: 43px;
 left: 52px;
-top: 816px;
+top: 720px;
 border-radius: 50%;
 }
 
 .picture {
 	position: absolute;
-width: 550px;
-height: 550px;
-left: 190px;
-top: 200px;
+  width: 550px;
+  height: 550px;
+  left: 190px;
+  top: 100px;
+}
+
+.block__one {
+	position: relative;
+	display: inline-block;
+}
+
+.block__one:before {
+	position:absolute;
+	display: inline-block;
+	content:'';
+	width:461px;
+	height: 808px;
+	background: #000;
 }
 
 .title__main {
 	position: absolute;
   left: 789px;
-  top: 263px;
+  top: 171px;
+	font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -139,14 +187,13 @@ top: 200px;
 }
 
 .desc__one {
-	position: absolute;
+	position: relative;
   left: 789px;
-  top: 470px;
+  top: 383px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
-  color: #000
 }
 
 .button__one {
@@ -154,7 +201,7 @@ top: 200px;
   width: 203px;
   height: 44px;
   left: 790px;
-  top: 640px;
+  top: 555px;
 	text-transform: uppercase;
 	border: 1.5px solid #000000;
   box-sizing: border-box;
@@ -170,226 +217,20 @@ position: absolute;
 width: 172px;
 height: 0px;
 left: 1043px;
-top: 662px;
+top: 578px;
 font-style: normal;
 font-weight: 500;
 font-size: 13px;
 line-height: 0px;
 }
-/* end header */
+
+/* end 1 section
 
 /* start 2 section */
 
-.block__two {
-	width: 1349px;
-	margin: 0;
-	height: 900px;
-	background: #FAE8E4;
-}
-
-.block__two:before {
-	display: block;
-	content: '';
-	position: absolute;
-	width: 450px;
-  height: 556px;
-  left: 850px;
-  top: 1088px;
-  background: #FFFFFF;
-	box-shadow: 25px 25px 40px lightgray;
-}
-
-.title__two {
-	position: absolute;
-  width: 340px;
-  height: 41px;
-  left: 905px;
-  top: 1108px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 41px;
-}
-
-.title__three {
-	position: absolute;
-left: 908px;
-top: 1166px;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 16px;
-letter-spacing: 0.07em;
-text-transform: uppercase;
-color: #000000;
-opacity: 0.5;
-}
-
-.desc__two {
-	position: absolute;
-  left: 908px;
-  top: 1238px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
-  opacity: 0.5;
-}
-
-.button__two {
-	position: absolute;
-width: 230px;
-height: 44px;
-left: 1000px;
-top: 1536px;
-background: #fff;
-border: 1.5px solid #000000;
-text-transform: uppercase;
-}
-
-.button__two-two {
-	position: absolute;
-  width: 90px;
-  height: 44px;
-  left: 900px;
-  top: 1536px;
-	background: #fff;
-	border: 1.5px solid #000;
-  text-transform: uppercase;
-	letter-spacing: 6px;
-}
-
-.loco {
-	position: absolute;
-width: 299px;
-height: 58px;
-left: 850px;
-top: 1687px;
-text-transform: uppercase;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 16px;
-}
-
-.icon__circle-one {
-	position: absolute;
-	width: 30px;
-  height: 30px;
-	left: 900px;
-  top: 1447px;
-  border-radius: 50%;
-}
-
-.icon__circle-two {
-	position: absolute;
-	width: 38px;
-  height: 38px;
-	left: 940px;
-  top: 1443px;
-}
-
-.icon__circle-three {
-	position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 988px;
-  top: 1447px;
-}
-
-.icon__circle-four {
-	position: absolute;
-  width: 30.18px;
-  height: 30px;
-  left: 1028px;
-  top: 1447px;
-}
-
-.icon__vektor {
-	position: absolute;
-  width: 241px;
-  height: 10px;
-  left: 1060px;
-  top: 1690px;
-}
-
-.icon__bag {
-	position: absolute;
-  width: 398px;
-  height: 415px;
-  left: 137px;
-  top: 1117px;
-}
-
-.icon__bag-two {
-	position: absolute;
-  width: 582px;
-  height: 844px;
-  left: 231px;
-  top: 928px;
-}
-
-.icon__price {
-	position: absolute;
-  width: 125px;
-  height: 57px;
-  left: 1110px;
-  top: 1433px;
-	font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 56px;
-}
 
 /* end section 2 */
 
 /* start section 3 */
 
-.block__three {
-	position: relative;
-	width: 1349px;
-	margin: 0;
-	height: 900px;
-	background: #EBE3D8;
-}
-
-.title-two {
-	position: absolute;
-	left: 800px;
-top: 263px;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 41px;
-}
-
-.title__four {
-	position: absolute;
-	left: 800px;
-	top: 320px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 16px;
-	letter-spacing: 0.07em;
-	text-transform: uppercase;
-	color: #000000;
-	opacity: 0.5;
-}
-
-.desc {
-	position: absolute;
-left: 800px;
-top: 380px;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 21px;
-color: #000000;
-opacity: 0.5;
-}
-
-.button__three {
-
-}
+/* end section 3 */
