@@ -9,18 +9,20 @@ a {
 	color: #fff;
 }
 
+.container {
+}
+
 /* start header */
 
-.header {
-	position: relative;
+.nav {
 	width: 1349px;
 	margin: 0;
 	height: 92px;
 }
 
-.header:before {
+.nav:before{
 	position: absolute;
-	display: inline-block;
+	display: flex;
 	content: '';
 	width: 461px;
 	height: 92px;
@@ -28,23 +30,27 @@ a {
 	background: #000;
 }
 
-.nav {
+ul {
+	position: relative;
 	display: flex;
-	justify-content: flex-end;
+	align-items: center;
+  flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
 }
 
  .menu {
 	position: relative;
 	display: flex;
+	justify-content: center;
 	width: 92px;
 	height: 92px;
 	background: whitesmoke;
-	justify-content: center;
 }
 
 .menu span {
 	position: absolute;
-	display: inline-block;
 	width: 35px;
 	height: 4px;
   top: 39px;
@@ -62,146 +68,98 @@ a {
 }
 
 .link {
-	position: absolute;
-width: 98px;
-height: 37px;
-left: 52px;
-top: 36px;
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
 line-height: 37px;
-text-align: center;
 letter-spacing: 0.07em;
+color: #fff;
 }
 
 .link__two {
-	position: absolute;
-	left: 388px;
-top: 42px;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
+color: #fff;
 }
 
-/* header end */
+.item {
+	flex-basis: 600px;
+}
 
 /* start 1 section */
+
 .icon__one {
-	position: absolute;
 	width: 11px;
-  height: 5.5px;
-  left: 423px;
-  top: 54px;
+  height: 5px;
 }
 
 .icon__two {
-	position: absolute;
 width: 43px;
 height: 10px;
-left: 1220px;
-top: 573px;
 color: #000;
-}
-
-.icon__three {
-
-position: absolute;
-width: 27px;
-height: 46px;
-left: 710px;
-top: 720px;
-box-sizing: border-box;
-}
-
-.icon__three-add {
-	position: absolute;
-	width: 2.45px;
-  height: 8.21px;
-  left: 722.5px;
-  top: 730px;
-}
-
-.icon__FB {
-	position: absolute;
-width: 42.98px;
-height: 43px;
-left: 162.02px;
-top: 720px;
-border-radius: 50%;
-
-background: #FFFFFF;
-}
-
-.icon__VK {
-	position: absolute;
-width: 42.98px;
-height: 43px;
-left: 107.01px;
-top: 720px;
-	border-radius: 50%;
-}
-
-.icon__INST {
-	position: absolute;
-width: 42.98px;
-height: 43px;
-left: 52px;
-top: 720px;
-border-radius: 50%;
+cursor: pointer;
 }
 
 .picture {
-	position: absolute;
   width: 550px;
-  height: 550px;
-  left: 190px;
-  top: 100px;
+  height: 562px;
 }
 
-.block__one {
-	position: relative;
-	display: inline-block;
+.s1_image {
+	margin-left: 100px;
 }
 
-.block__one:before {
-	position:absolute;
+.s1 {
+	height: 808px;
+}
+
+.s1:before {
+	position: absolute;
 	display: inline-block;
 	content:'';
 	width:461px;
-	height: 808px;
+	height: 820px;
 	background: #000;
 }
 
-.title__main {
-	position: absolute;
-  left: 789px;
-  top: 171px;
+.cont {
+	position: relative;
+	width:auto;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.s1_content {
+	margin-left: 50px;
+
+}
+
+.s1_h1 {
 	font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 82px;
+	margin: 0;
   color: #000
 }
 
-.desc__one {
-	position: relative;
-  left: 789px;
-  top: 383px;
+.s1_p1 {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
+	margin-bottom: 40px;
 }
 
-.button__one {
-	position: absolute;
+.s1_button {
   width: 203px;
   height: 44px;
-  left: 790px;
-  top: 555px;
 	text-transform: uppercase;
 	border: 1.5px solid #000000;
   box-sizing: border-box;
@@ -210,21 +168,67 @@ font-style: normal;
 font-weight: 500;
 font-size: 13px;
 line-height: 0px;
+margin-right: 54px;
+cursor: pointer;
 }
 
-.add {
-position: absolute;
-width: 172px;
-height: 0px;
-left: 1043px;
-top: 578px;
+.s1_dop {
 font-style: normal;
 font-weight: 500;
 font-size: 13px;
 line-height: 0px;
+margin-right: 19px;
 }
 
-/* end 1 section
+
+.s1_icon_soc {
+  width: auto;
+	height: auto;
+	letter-spacing: 5px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.s1_icon_image {
+padding-left: 50px;
+}
+
+.s1_icon_scroll {
+	position: relative;
+  margin-left: 500px;
+}
+
+.icon_scroll {
+	width: 27px;
+	height: 46px;
+}
+
+.icon_inst {
+	position: relative;
+   width: 43px;
+	 height: 43px;
+	 background: #FFF;
+	 border-radius: 50%
+}
+
+.icon_vk {
+	position: relative;
+   width: 43px;
+	 height: 43px;
+	 background: #FFF;
+	 border-radius: 50%
+}
+
+.icon_fb {
+	position: relative;
+   width: 43px;
+	 height: 43px;
+	 background: #FFF;
+	 border-radius: 50%
+}
+
+/* end 1 section */
+/* end header */
 
 /* start 2 section */
 
