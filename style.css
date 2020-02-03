@@ -1,25 +1,41 @@
-@media (max-width 320px) {
-	.nav
-}
-
-
-
-
-@media (max-width: 320px) {
-		.s1_h1 {
-			font-size: 40px;
-		}
-
-@media (max-width: 320px) {
+@media (max-width: 400px) {
+	.nav:before {
+	}
 	.s1 {
+		max-width: 320px;
+		height: 100vh;
 		background-image: url(pete-bellis-432867-unsplash.png);
 		background-size: cover;
-		box-sizing:border-box;
+		box-sizing: border-box;
 	}
+	.s1:before {
+		display: none;
+	}
+	.s1_content {
+		display: none;
+	}
+	.s1_icon_soc {
+		display: none;
+	}
+	.link {
+		display: none;
+	}
+	.link__two {
+		display: none;
+	}
+	.icon__one {
+		display: none;
+	}
+	.s1_image {
+		display: none;
+	}
+
 }
 
+
 body {
-	margin: 0;
+	display: block;
+	margin: 0 auto;
 	padding: 0;
 	font-family: 'Montserrat';
 }
@@ -32,11 +48,13 @@ a {
 /* start header */
 
 .nav {
+	display: inline-block;
+	margin: 0 auto;
 	width: 1349px;
 	height: 92px;
 }
 
-.nav:before{
+.nav:before {
 	position: absolute;
 	display: flex;
 	content: '';
@@ -129,21 +147,24 @@ cursor: pointer;
 }
 
 .s1 {
+	display: block;
+	margin: auto;
 	height: 808px;
+	width: 1349px;
 }
 
 .s1:before {
 	position: absolute;
 	display: inline-block;
 	content:'';
-	width:461px;
+	width: 461px;
 	height: 820px;
 	background: #000;
 }
 
 .cont {
 	position: relative;
-	width:auto;
+	width: 1320px;
 	height: 90%;
 	display: flex;
 	flex-direction: row;
@@ -244,6 +265,7 @@ padding-left: 50px;
 	 background: #FFF;
 	 border-radius: 50%
 }
+
 
 /* end 1 section */
 /* end header */
