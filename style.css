@@ -1,14 +1,32 @@
 @media (max-width: 400px) {
+
+  .header {
+		max-width: 320px;
+	}
+
+  .nav:before {
+		opacity: 0;
+	}
+
+	.item_zero {
+		margin-left: 26px;
+	}
+
 	.s1 {
 		max-width: 320px;
 		height: 100vh;
 		background-image: url(pete-bellis-432867-unsplash.png);
 		background-size: cover;
-		box-sizing: border-box;
+		background-position: center;
 	}
 	.s1:before {
-		display: none;
+		opacity: 0;
 	}
+
+  .cont {
+		max-width: 320px;
+	}
+
 	.s1_content {
 		display: none;
 	}
@@ -16,7 +34,7 @@
 		display: none;
 	}
 	.link {
-		display: ;
+		color: #000;
 	}
 	.link__two {
 		display: none;
@@ -27,9 +45,9 @@
 	.s1_image {
 		display: none;
 	}
-	.menu {
-		margin-left: 0;
-
+	.men {
+		width: 70px;
+		height: 70px;
 	}
 
 }
@@ -50,47 +68,44 @@ a {
 /* start header */
 
 .header {
-	max-width: 1350px;
+	max-width: 1349px;
 	margin: 0 auto;
 
 }
 
 .nav {
-	display: inline-block;
-	max-width: 1350px;
-	margin: 0 auto;
+	display: flex;
+	max-width: 1349px;
 	height: 92px;
 }
 
 .nav:before {
 	position: absolute;
-	display: flex;
+	display: inline-block;
 	content: '';
 	width: 461px;
 	height: 92px;
-	margin: 0;
 	background: #000;
 }
 
 .main_menu {
-	max-width: 1350px;
+	width: 1349px;
 	position: relative;
 	display: flex;
 	align-items: center;
-    flex-direction: row;
-	justify-content: space-between;
+  flex-direction: row;
 	list-style: none;
 	margin: 0 auto;
 }
 
  .menu {
-	 margin-left: 825px;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	width: 92px;
 	height: 92px;
 	background: whitesmoke;
+	margin: 0;
 }
 
 .menu span {
@@ -112,7 +127,6 @@ a {
 }
 
 .link {
-	margin: 40px;
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
@@ -129,8 +143,16 @@ line-height: 24px;
 color: #fff;
 }
 
+.item_zero {
+	margin-left: 40px;
+	flex-basis: 360px;
+}
+
 .item {
-	margin-left: 209px;
+	flex-basis: 900px;
+}
+
+.item_two {
 }
 
 /* start 1 section */
