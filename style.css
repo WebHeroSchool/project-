@@ -16,6 +16,7 @@ a {
   display: flex;
   justify-content: space-between;
 	max-width: 1349px;
+  min-width: 400px;
   margin: auto;
 }
 
@@ -141,6 +142,7 @@ cursor: pointer;
 .cont {
 	position: relative;
 	max-width: 1350px;
+  min-width: 400px;
   height: 100%;
 	display: flex;
   flex-wrap: wrap;
@@ -166,6 +168,8 @@ cursor: pointer;
 }
 
 .s1_p1 {
+  width: 470px;
+  height: 130px;
 	font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
@@ -246,10 +250,138 @@ margin-right: 19px;
 	 border-radius: 50%
 }
 
-@media (max-width: 461px) {
+@media (max-width: 1270px) {
+
+  .s1_image {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+  }
+
+  .picture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .s1_icon_scroll {
+    margin-left: 370px;
+  }
+
+  .nav:before {
+    width: 395px;
+  }
+
+  .s1:before {
+    width: 395px;
+  }
+
+  .item_zero {
+    height: 36px;
+    margin-left: 40px;
+    flex-basis: 300px;
+}
+
+.s1_h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 45px;
+    color: #000;
+}
+}
+
+@media (max-width: 1150px) {
+
+  .picture {
+    width: 250px;
+    height: 250px;
+  }
+
+  .s1_image {
+    width: 250px;
+    height: 250px;
+    margin-left: 80px;
+  }
+
+  .s1_content {
+    margin-left: 130px;
+}
+.s1_icon_image {
+  padding-left: 125px;
+}
+
+.s1_icon_scroll {
+    margin-left: 440px;
+}
+
+}
+
+@media (max-width: 960px) {
+  .s1_content {
+    margin-left: 110px;
+  }
+
+.s1_dop {
+    display: none;
+  }
+
+    .icon__two {
+    display: none;
+  }
+}
+@media (max-width: 930px) {
+  .s1_content {
+    margin-left: 100px;
+  }
+
+  .s1_h1 {
+    margin-bottom: 10px;
+  }
+
+  .s1_p1 {
+    width: 230px;
+    margin-bottom: 95px;
+  }
+
+  .s1_icon_scroll {
+    margin-left: 380px;
+  }
+}
+@media (max-width: 705px) {
+  .s1_icon_scroll {
+    display: none;
+  }
+
+  .s1_content {
+    margin-left: 90px;
+  }
+
+  .s1 {
+    background: #000;
+  }
 
   .header {
-		width: 461px;
+    background: #000;
+  }
+
+  .s1_h1 {
+    color: #fff;
+  }
+
+  .s1_p1 {
+    color: #fff;
+    width: 400px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .header {
+		max-width: 400px;
+    background: #fff;
 	}
 
   .nav:before {
@@ -258,7 +390,7 @@ margin-right: 19px;
 
   .item_zero {
     color: black;
-    margin-left: 26px;
+    margin-left: 25px;
   }
 
   .link {
@@ -272,7 +404,7 @@ margin-right: 19px;
   }
 
 	.s1 {
-		width: 461px;
+		max-width: 400px;
     height: 808px;
 		background-image: url(pete-bellis-432867-unsplash.jpg);
 		background-size: cover;
@@ -285,12 +417,12 @@ margin-right: 19px;
 	}
 
   .cont {
-		max-width: 461px;
+		max-width: 400px;
     flex-direction: column;
 	}
 
 	.s1_content {
-    margin-left: -67px;
+    margin-left: 10px;
     margin-top: auto;
 	}
 	.s1_icon_image {
@@ -317,6 +449,10 @@ margin-right: 19px;
     margin-left: 165px;
     margin-bottom: 37px;
     margin-top: 50px;
+  }
+
+  .s1_h1 {
+    color: #000;
   }
 
   .s1_p1 {
