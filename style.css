@@ -1,111 +1,142 @@
-@media (max-width: 400px) {
+@media (max-width: 461px) {
 
   .header {
-		max-width: 320px;
+		max-width: 461px;
 	}
 
   .nav:before {
 		opacity: 0;
 	}
 
-	.item_zero {
-		margin-left: 26px;
-	}
+  .item_zero {
+    margin-left: 26px;
+  }
+
+  .link {
+    font-size: 30px;
+    line-height: 37px;
+    color: #000;
+  }
+
+ .link__two {
+    display: none;
+  }
 
 	.s1 {
-		max-width: 320px;
-		height: 100vh;
-		background-image: url(pete-bellis-432867-unsplash.png);
+		max-width: 461px;
+    height: 808px;
+		background-image: url(pete-bellis-432867-unsplash.jpg);
 		background-size: cover;
 		background-position: center;
-	}
+			}
 	.s1:before {
 		opacity: 0;
 	}
 
   .cont {
-		max-width: 320px;
+		max-width: 461px;
+    flex-direction: column;
 	}
 
 	.s1_content {
-		display: none;
+    margin-left: 26px;
 	}
 	.s1_icon_image {
 		display: none;
 	}
-	.link {
-		color: #000;
-	}
-	.link__two {
+
+	.s1_icon_soc {
 		display: none;
 	}
+
+  .s1_icon_scroll {
+    display: none;
+  }
+
+  .s1_h1 {
+    font-size: 10px;
+  }
+
+  .cursor_scroll {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 14px;
+  }
+
+  .s1_p1 {
+    display: none;
+  }
+
+  .s1_button {
+    display: none;
+  }
+
+  .s1_dop {
+    display: none;
+  }
+
+  .icon__two {
+    display: none;
+  }
+
 	.icon__one {
 		display: none;
 	}
 	.s1_image {
 		display: none;
 	}
-	.men {
-		width: 70px;
-		height: 70px;
-	}
-
 }
 
 
 body {
-	display: block;
-	margin: 0 auto;
+	display: flex;
+  flex-direction: column;
+	margin: auto;
 	padding: 0;
 	font-family: 'Montserrat';
 }
 
 a {
 	text-decoration: none;
-	color: #fff;
 }
 
 /* start header */
 
 .header {
+  display: flex;
+  justify-content: space-between;
 	max-width: 1349px;
-	margin: 0 auto;
-
+  margin: auto;
 }
 
-.nav {
-	display: flex;
-	max-width: 1349px;
-	height: 92px;
-}
 
 .nav:before {
 	position: absolute;
-	display: inline-block;
+	display: flex;
 	content: '';
 	width: 461px;
 	height: 92px;
 	background: #000;
 }
 
-.main_menu {
+.nav {
 	width: 1349px;
-	position: relative;
 	display: flex;
 	align-items: center;
   flex-direction: row;
+  justify-content: space-between;
 	list-style: none;
-	margin: 0 auto;
 }
 
  .menu {
 	position: relative;
 	display: flex;
-	justify-content: center;
+  justify-content: center;
 	width: 92px;
 	height: 92px;
 	background: whitesmoke;
-	margin: 0;
+	margin: auto;
 }
 
 .menu span {
@@ -127,15 +158,21 @@ a {
 }
 
 .link {
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 37px;
-letter-spacing: 0.07em;
-color: #fff;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.07em;
+  color: #fff;
+}
+
+.cursor_scroll {
+  display: none;
 }
 
 .link__two {
+  position: absolute;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
@@ -144,20 +181,22 @@ color: #fff;
 }
 
 .item_zero {
+  height: 35px;
 	margin-left: 40px;
 	flex-basis: 360px;
 }
 
 .item {
-	flex-basis: 900px;
+  flex-basis: 64%;
 }
 
-.item_two {
-}
 
 /* start 1 section */
 
 .icon__one {
+  position: relative;
+  left: 32px;
+  top: 0px;
 	width: 11px;
   height: 5px;
 }
@@ -175,11 +214,11 @@ cursor: pointer;
 }
 
 .s1_image {
-	margin-left: 100px;
+  margin-top: 50px;
+	margin-left: 180px;
 }
 
 .s1 {
-	display: block;
 	margin: auto;
 	height: 808px;
 	max-width: 1350px;
@@ -187,7 +226,7 @@ cursor: pointer;
 
 .s1:before {
 	position: absolute;
-	display: inline-block;
+	display: block;
 	content:'';
 	width: 461px;
 	height: 820px;
@@ -195,14 +234,13 @@ cursor: pointer;
 }
 
 .cont {
-	margin: 0 auto;
 	position: relative;
 	max-width: 1350px;
-	height: 90%;
+  height: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
 }
 
 .s1_content {
@@ -258,12 +296,12 @@ margin-right: 19px;
 	height: auto;
 	letter-spacing: 5px;
 	display: flex;
-	justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .s1_icon_image {
 	max-width: 1350px;
-padding-left: 50px;
+  padding-left: 50px;
 }
 
 .s1_icon_scroll {
