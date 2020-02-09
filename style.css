@@ -105,6 +105,7 @@ color: #fff;
   top: 0px;
 	width: 11px;
   height: 5px;
+  vertical-align: bottom;
 }
 
 .icon__two {
@@ -317,7 +318,7 @@ margin-right: 19px;
 
 }
 
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .s1_content {
     margin-left: 110px;
   }
@@ -340,15 +341,15 @@ margin-right: 19px;
   }
 
   .s1_p1 {
-    width: 230px;
-    margin-bottom: 95px;
+    width: 270px;
+    margin-bottom: 85px;
   }
 
   .s1_icon_scroll {
     margin-left: 380px;
   }
 }
-@media (max-width: 705px) {
+@media (max-width: 750px) {
   .s1_icon_scroll {
     display: none;
   }
@@ -372,7 +373,7 @@ margin-right: 19px;
   .s1_p1 {
     color: #fff;
     width: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -438,17 +439,17 @@ margin-right: 19px;
   }
 
   .s1_h1 {
-    font-size: 70px;
+    font-size: 50px;
     line-height: 51px;
+    margin-bottom: 45px;
   }
 
   .cursor_scroll {
     display: inline;
-    width: 50px;
+    width: 45px;
     height: 30px;
-    margin-left: 165px;
-    margin-bottom: 37px;
-    margin-top: 50px;
+    margin-left: 140px;
+    margin-bottom: 40px;
   }
 
   .s1_h1 {
