@@ -136,7 +136,7 @@ cursor: pointer;
 	display: block;
 	content:'';
 	width: 461px;
-	height: 820px;
+	height: 808px;
 	background: #000;
 }
 
@@ -187,20 +187,21 @@ cursor: pointer;
   box-sizing: border-box;
 	background: #fff;
 	font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 0px;
-margin-right: 54px;
-cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  margin-right: 54px;
+  cursor: pointer;
 }
 
 .s1_dop {
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 0px;
-margin-right: 19px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  margin-right: 19px;
+  cursor: pointer;
 }
 
 
@@ -228,7 +229,7 @@ margin-right: 19px;
 }
 
 .icon_inst {
-	position: relative;
+   position: relative;
    width: 43px;
 	 height: 43px;
 	 background: #FFF;
@@ -236,7 +237,7 @@ margin-right: 19px;
 }
 
 .icon_vk {
-	position: relative;
+	 position: relative;
    width: 43px;
 	 height: 43px;
 	 background: #FFF;
@@ -244,14 +245,14 @@ margin-right: 19px;
 }
 
 .icon_fb {
-	position: relative;
+	 position: relative;
    width: 43px;
 	 height: 43px;
 	 background: #FFF;
 	 border-radius: 50%
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
 
   .s1_image {
     width: 400px;
@@ -294,6 +295,14 @@ margin-right: 19px;
 
 @media (max-width: 1150px) {
 
+  .nav:before {
+    width: 330px;
+  }
+
+  .s1:before {
+    width: 330px;
+  }
+
   .picture {
     width: 250px;
     height: 250px;
@@ -302,18 +311,22 @@ margin-right: 19px;
   .s1_image {
     width: 250px;
     height: 250px;
-    margin-left: 80px;
+    margin-left: 40px;
   }
 
   .s1_content {
     margin-left: 130px;
 }
 .s1_icon_image {
-  padding-left: 125px;
+  padding-left: 80px;
 }
 
 .s1_icon_scroll {
     margin-left: 440px;
+}
+
+.link__two {
+  display: none;
 }
 
 }
@@ -333,7 +346,7 @@ margin-right: 19px;
 }
 @media (max-width: 930px) {
   .s1_content {
-    margin-left: 100px;
+    margin-left: 65px;
   }
 
   .s1_h1 {
@@ -348,35 +361,117 @@ margin-right: 19px;
   .s1_icon_scroll {
     margin-left: 380px;
   }
+
+  .link__two {
+    display: none;
+  }
+
+  .icon__one {
+    display: none;
+  }
 }
-@media (max-width: 750px) {
+
+@media (max-width: 710px) {
+
+  .header {
+		max-width: 710px;
+    background: #fff;
+	}
+
+  .nav:before {
+    display: none;
+	}
+
+  .item_zero {
+    color: black;
+    margin-left: 25px;
+  }
+
+  .link {
+    font-size: 30px;
+    line-height: 37px;
+    color: #000;
+  }
+
+ .link__two {
+    display: none;
+  }
+
+	.s1 {
+		width: 710px;
+    height: 808px;
+	}
+
+	.s1:before {
+    display: none;
+	}
+
+  .cont {
+		max-width: 710px;
+    flex-direction: column;
+    background-image: url(pete-bellis-432867-unsplash.jpg);
+		background-size: cover;
+		background-position: center;
+    background-repeat: no-repeat;
+	}
+
+	.s1_content {
+    margin-left: -130px;
+    margin-top: auto;
+	}
+	.s1_icon_image {
+		display: none;
+	}
+
+	.s1_icon_soc {
+		display: none;
+	}
+
   .s1_icon_scroll {
     display: none;
   }
 
-  .s1_content {
-    margin-left: 90px;
+  .s1_h1 {
+    font-size: 70px;
+    line-height: 60px;
+    margin-bottom: 45px;
   }
 
-  .s1 {
-    background: #000;
-  }
-
-  .header {
-    background: #000;
+  .cursor_scroll {
+    display: inline;
+    width: 45px;
+    height: 30px;
+    margin-left: 200px;
+    margin-bottom: 40px;
   }
 
   .s1_h1 {
-    color: #fff;
+    color: #000;
   }
 
   .s1_p1 {
-    color: #fff;
-    width: 400px;
-    margin-bottom: 30px;
+    display: none;
   }
-}
 
+  .s1_button {
+    display: none;
+  }
+
+  .s1_dop {
+    display: none;
+  }
+
+  .icon__two {
+    display: none;
+  }
+
+	.icon__one {
+		display: none;
+	}
+	.s1_image {
+		display: none;
+	}
+}
 
 @media (max-width: 400px) {
 
@@ -407,10 +502,6 @@ margin-right: 19px;
 	.s1 {
 		max-width: 400px;
     height: 808px;
-		background-image: url(pete-bellis-432867-unsplash.jpg);
-		background-size: cover;
-		background-position: center;
-    background-repeat: no-repeat;
 	}
 
 	.s1:before {
@@ -420,10 +511,14 @@ margin-right: 19px;
   .cont {
 		max-width: 400px;
     flex-direction: column;
+    background-image: url(pete-bellis-432867-unsplash.jpg);
+		background-size: cover;
+		background-position: center;
+    background-repeat: no-repeat;
 	}
 
 	.s1_content {
-    margin-left: 10px;
+    margin-left: -50px;
     margin-top: auto;
 	}
 	.s1_icon_image {
@@ -448,7 +543,7 @@ margin-right: 19px;
     display: inline;
     width: 45px;
     height: 30px;
-    margin-left: 140px;
+    margin-left: 110px;
     margin-bottom: 40px;
   }
 
@@ -481,11 +576,16 @@ margin-right: 19px;
 }
 
 
-
 /* end 1 section */
-/* end header */
 
 /* start 2 section */
+
+.s2 {
+  display: flex;
+  max-width: 1440px;
+  height: 900px;
+  background-color: #FAE8E4;
+}
 
 
 /* end section 2 */
