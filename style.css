@@ -75,13 +75,13 @@ line-height: 24px;
 color: #fff;
 }
 
-.wrapper__loco {
+.nav__loco {
   height: 35px;
 	margin-left: 40px;
 	flex-basis: 360px;
 }
 
-.wrapper__ru {
+.nav__ru {
   flex-basis: 64%;
 }
 
@@ -103,12 +103,12 @@ color: #000;
 cursor: pointer;
 }
 
-.girl {
+.image__girl {
   width: 550px;
   height: 562px;
 }
 
-.wrapper__girl {
+.image__girl-container {
   margin-top: 50px;
 	margin-left: 180px;
 }
@@ -159,7 +159,7 @@ cursor: pointer;
 	margin-bottom: 40px;
 }
 
-.button__first {
+.section__first-btn {
   width: 203px;
   height: 44px;
 	text-transform: uppercase;
@@ -236,13 +236,13 @@ cursor: pointer;
 
 @media (max-width: 1300px) {
 
-  .wrapper__girl {
+  .image__girl-container {
     width: 400px;
     height: 400px;
     margin-left: 200px;
   }
 
-  .girl {
+  .image__girl {
     width: 400px;
     height: 400px;
   }
@@ -251,7 +251,7 @@ cursor: pointer;
     margin-left: 370px;
   }
 
-  .wrapper__loco {
+  .nav__loco {
     height: 36px;
     margin-left: 40px;
     flex-basis: 300px;
@@ -269,12 +269,12 @@ cursor: pointer;
 
 @media (max-width: 1170px) {
 
-  .girl {
+  .image__girl {
     width: 250px;
     height: 250px;
   }
 
-  .wrapper__girl {
+  .image__girl-container {
     width: 250px;
     height: 250px;
     margin-left: 40px;
@@ -295,7 +295,7 @@ cursor: pointer;
   display: none;
 }
 
-.wrapper__ru {
+.nav__ru {
 	display: none;
 }
 
@@ -318,11 +318,11 @@ cursor: pointer;
   .section__first {
 		background: linear-gradient(90deg, rgba(0,0,0,1) 34%, rgba(255,255,255,1) 34%);
 	}
-  .wrapper__girl {
+  .image__girl-container {
 		margin-left: 50px;
 	}
 
-	.girl {
+	.image__girl {
 		width: 200px;
 		height: 200px;
 	}
@@ -358,7 +358,7 @@ cursor: pointer;
     margin-left: 50px;
   }
 
-	.wrapper__girl {
+	.image__girl-container {
 		margin-left: 30px;
 	}
 
@@ -393,7 +393,7 @@ cursor: pointer;
     margin-left: 40px;
   }
 
-	.wrapper__girl {
+	.image__girl-container {
 		margin-left: 20px;
 	}
 
@@ -428,7 +428,7 @@ cursor: pointer;
     background: #fff;
 	}
 
-  .wrapper__loco {
+  .nav__loco {
     color: black;
     margin-left: 25px;
   }
@@ -491,7 +491,7 @@ cursor: pointer;
     display: none;
   }
 
-  .button__first {
+  .section__first-btn {
     display: none;
   }
 
@@ -506,7 +506,7 @@ cursor: pointer;
 	.icon__header {
 		display: none;
 	}
-	.wrapper__girl {
+	.image__girl-container {
 		display: none;
 	}
 }
@@ -518,7 +518,7 @@ cursor: pointer;
     background: #fff;
 	}
 
-  .wrapper__loco {
+  .nav__loco {
     color: black;
     margin-left: 25px;
   }
@@ -582,7 +582,7 @@ cursor: pointer;
     display: none;
   }
 
-  .button__first {
+  .section__first-btn {
     display: none;
   }
 
@@ -597,7 +597,7 @@ cursor: pointer;
 	.icon__header {
 		display: none;
 	}
-	.wrapper__girl {
+	.image__girl-container {
 		display: none;
 	}
 }
